@@ -7,13 +7,12 @@ import { Component } from '@angular/core';
 export class CounterComponent{
     title="Contador";
   nombre: string = 'Mario';
-  contador: number=0;
+  contador_counter: number=0;
 
-  add(){
-    this.contador++
+  handleCount(value:number){
+    this.contador_counter=value;
   }
+  
 
-  quitar(){
-    this.contador--
-  }
+  
 }
